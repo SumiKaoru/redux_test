@@ -8,7 +8,7 @@ const Counter = ({number, color, onIncrement, onDecrement, onSetColor}) => {
             className="Counter" 
             onClick={onIncrement}
             onContextMenu={
-                (e) => { 
+                (e) => {
                     e.preventDefault(); 
                     onDecrement();
                 }
